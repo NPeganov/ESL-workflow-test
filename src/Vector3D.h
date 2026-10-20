@@ -7,15 +7,15 @@ typedef struct {
 } Vector3D;
 
 // Операция сложения векторов
-Vector3D add(Vector3D a, Vector3D b);
+Vector3D add(const Vector3D *a, const Vector3D *b);
 
 // Операция вычитания векторов
-Vector3D subtract(Vector3D a, Vector3D b);
+Vector3D subtract(const Vector3D *a, const Vector3D *b);
 
 // Скалярное (внутреннее) произведение векторов
-double dot(Vector3D a, Vector3D b);
+double dot(const Vector3D *a, const Vector3D *b);
 
 // Векторное (крестное) произведение векторов
-Vector3D cross(Vector3D a, Vector3D b);
+Vector3D cross(const Vector3D *a, const Vector3D *b);
 
 #endif
